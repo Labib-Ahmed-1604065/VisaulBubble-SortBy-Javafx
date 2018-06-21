@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="525.0" prefWidth="870.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bubblesort.MainLayoutController">
+    <stylesheets>
+        <URL value="@mainlayout.css" />
+    </stylesheets>
+   <children>
+      <Circle fx:id="circle" fill="#ee1515" layoutX="360.0" layoutY="189.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <ComboBox fx:id="comboBox" layoutX="88.0" layoutY="66.0" onAction="#OnComboChange" prefHeight="25.0" prefWidth="94.0" />
+      <Label layoutX="92.0" layoutY="42.0" text="Number of Inputs" />
+      <TextArea fx:id="inputText" layoutX="246.0" layoutY="57.0" prefHeight="43.0" prefWidth="218.0" />
+      <Label layoutX="301.0" layoutY="34.0" text="input Numbers" />
+      <Button layoutX="541.0" layoutY="66.0" mnemonicParsing="false" onAction="#OnStartButton" text="Start" />
+      <Button layoutX="617.0" layoutY="66.0" mnemonicParsing="false" onAction="#onPauseButton" text="Pause" />
+      <Button layoutX="10.0" layoutY="480.0" mnemonicParsing="false" text="About Me" />
+      <Label layoutX="259.0" layoutY="111.0" text="give a  coma ( , ) to separate a Number" />
+      <Label layoutX="325.0" layoutY="497.0" text="N.B Input Must be Lower than 1000" />
+      <Label fx:id="counterInput" layoutX="428.0" layoutY="34.0" text="0" />
+      <Label fx:id="inputmis" layoutX="119.0" layoutY="311.0" prefHeight="35.0" prefWidth="633.0" text="Number of Inputs is not equal of your given input !!!" textFill="#fc0000">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
